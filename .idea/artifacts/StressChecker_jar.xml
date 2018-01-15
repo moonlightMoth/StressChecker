@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StressChecker:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StressChecker_jar</output-path>
+    <root id="archive" name="StressChecker.jar">
+      <element id="module-output" name="StressChecker" />
+    </root>
+  </artifact>
+</component>
