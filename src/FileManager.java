@@ -26,6 +26,7 @@ public class FileManager {
 
         while ((string = bufferedReader.readLine()) != null) {
             strings.add(string);
+            System.out.println(string);
         }
 
         return strings;
@@ -34,9 +35,12 @@ public class FileManager {
     private void writeSourceFile(String[] data)
     {
         try {
-            FileWriter  fileWriter = new FileWriter(source);
-            PrintWriter printWriter = new PrintWriter(fileWriter);
+            FileOutputStream fileOutputStream = new FileOutputStream(source);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);
+            PrintWriter printWriter = new PrintWriter(outputStreamWriter);
+
             for (int i = 0; i < data.length; i++) {
+                System.out.println(data[i]);
                 printWriter.println(data[i]);
             }
             printWriter.flush();
