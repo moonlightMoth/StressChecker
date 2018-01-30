@@ -53,6 +53,8 @@ public class MainFrame extends JFrame {
             }
         });
 
+        refreshStats();
+
     }
 
     private MainAnsVariantsPanel initMainAnswerVariantsPanel()
