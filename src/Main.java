@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String args[]) throws IOException
     {
-        GlobalVars.setSurcePath(chooseLiter() + "://surce.txt");
+        GlobalVars.setSurcePath("surce.txt");
         FileManager fileManager = new FileManager(GlobalVars.getSurcePath());
         GlobalVars.setWords(fileManager.readWordsFromFile());
 
